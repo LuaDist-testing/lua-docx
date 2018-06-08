@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lua-docx"
-version = "0.1-0"
+version = "1.0-0"
 -- LuaDist source
 source = {
-  tag = "0.1-0",
+  tag = "1.0-0",
   url = "git://github.com/LuaDist-testing/lua-docx.git"
 }
 -- Original source
 -- source = {
 --    url = "git://github.com/paragasu/lua-docx.git",
---    tag = "v0.1-0"
+--    tag = "v1.0-0"
 -- }
 description = {
    summary  = "Simple lua library to replace tags in the docx template file",
@@ -19,7 +19,9 @@ description = {
    maintainer = "Jeffry L. <paragasu@gmail.com>"
 }
 dependencies = {
-   "lua >= 5.1"
+   "lua >= 5.1",
+   "lua-resty-exec",
+   "lua-zip"
 }
 build = {
    type = "builtin",
